@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btntoplama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:text="@string/toplama"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btncikarma"
+        app:layout_constraintEnd_toStartOf="@+id/btncikarma"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btncarpma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="@string/carpma"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btncikarma"
+        app:layout_constraintEnd_toStartOf="@+id/btnbolme"
+        app:layout_constraintStart_toEndOf="@+id/btncikarma" />
+
+    <Button
+        android:id="@+id/btncikarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/cikarma"
+        app:layout_constraintEnd_toStartOf="@+id/btncarpma"
+        app:layout_constraintStart_toEndOf="@+id/btntoplama"
+        app:layout_constraintTop_toBottomOf="@+id/txtsonuc" />
+
+    <Button
+        android:id="@+id/btnbolme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bolme"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btncarpma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btncarpma" />
+
+    <EditText
+        android:id="@+id/ilksayi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/ikincisayi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/ilksayi"
+        app:layout_constraintTop_toBottomOf="@+id/ilksayi"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/txtsonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/sonuc"
+        app:layout_constraintStart_toStartOf="@+id/ikincisayi"
+        app:layout_constraintTop_toBottomOf="@+id/ikincisayi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HesapMakinesi</string>
+    <string name="cikarma">cikarma</string>
+    <string name="toplama">Toplama</string>
+    <string name="sonuc">Sonuc</string>
+    <string name="carpma">Carpma</string>
+    <string name="bolme">bolme</string>
+</resources>
